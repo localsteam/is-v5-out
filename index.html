@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>No</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-Friendly Video Background with "No"</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
 
-    h1 {
-      font-size: 48px;
-      color: red;
-    }
-  </style>
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            font-weight: bold; /* Add this line to make the text thicker */
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-  <h1>No</h1>
+    <video autoplay muted loop>
+        <source src="https://images-ext-1.discordapp.net/external/eU-4ADavkJ3EoLgvi2wo5XT3jL2GHmLmAu5u9X7yH10/https/media.tenor.com/axEPIBkgKy0AAAPo/the-lorax-leaving-lorax.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="centered-text">No</div>
 </body>
 </html>
